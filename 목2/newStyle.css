@@ -80,7 +80,7 @@ body {
   background-color: #313132;
 }
 .button__row > .double {
-  width: 125px;
+  width: 200px;
 }
 .button__row > .isPressed {
   background-color: #00da75;

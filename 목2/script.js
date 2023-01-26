@@ -47,11 +47,10 @@ buttons.addEventListener("click", function (event) {
           // 직전키를 변수에 할당 (직전키가 오퍼레이터냐 숫자냐에 따라 계산기의 다양한 기능을 구현하기 위함)
           previousNum = display.textContent; // 직전 숫자를 변수에 할당
         } // 기존 계산기 숫자가 0이 아니고, 오퍼레이터 버튼이 눌린 상태의 분기
-        // ex) 15+7을 하기 위해 15와 +를 누른 상태(두번째 숫자를 누르기 위한 코드)
         else if (previousKey !== operatorForAdvanced) {
           display.textContent = display.textContent + buttonContent;
           previousNum = display.textContent;
-        } // ex) 15+17을 하기 위해 15와 +, 1을 누른 상태(17을 완성하기 위한 코드)
+        }
       }
     }
     if (action === "operator") {
